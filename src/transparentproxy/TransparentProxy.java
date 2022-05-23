@@ -4,7 +4,6 @@ import base.Helper;
 import base.IniFile;
 import base.ScriptConfig;
 import base.Socks5SniffProxy;
-import base.TrsProxy;
 import base.miniBrowser;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
