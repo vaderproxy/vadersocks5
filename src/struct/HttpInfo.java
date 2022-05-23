@@ -87,7 +87,6 @@ public class HttpInfo {
                     continue;
                 }
 
-                //System.out.println("name: " + name + "; value:" + value);
             }
         }
     }
@@ -124,7 +123,6 @@ public class HttpInfo {
                 if (line.isEmpty()) {
                     skip_empty++;
                     break;
-                    //continue;
                 }
 
                 int pos = line.indexOf(':');
@@ -161,7 +159,6 @@ public class HttpInfo {
                     continue;
                 }
 
-                //System.out.println("name: " + name + "; value:" + value);
             }
         }
     }
@@ -207,7 +204,6 @@ public class HttpInfo {
                 while ((line = bufferedReader.readLine()) != null) {
                     otvet.append(line);
                     otvet.append("\r\n");
-                    //System.out.println(line);
                 }
             } catch (Exception ex) {
             }
@@ -219,9 +215,6 @@ public class HttpInfo {
     }
 
     public boolean isTextFile() {
-        if (Math.abs(2) > 1) {
-            return false;
-        }
         if (this.request.path_lower == null) {
             return true;
         }

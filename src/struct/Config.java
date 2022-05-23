@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Config {
 
     public static ArrayList<String> allowed_ips = new ArrayList();
-    public static String url_back = "http://localhost/venus";
+    public static String url_back = "http://localhost/vader";
     public static String my_ip = "127.0.0.1";
     public static String network_interface = null;
     public static int port = 8887;

@@ -118,9 +118,6 @@ public class Helper {
             messageDigest.update(st.getBytes());
             digest = messageDigest.digest();
         } catch (Exception e) {
-            // тут можно обработать ошибку
-            // возникает она если в передаваемый алгоритм в getInstance(,,,) не существует
-            //e.printStackTrace();
         }
 
         BigInteger bigInt = new BigInteger(1, digest);

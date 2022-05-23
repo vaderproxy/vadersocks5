@@ -42,7 +42,6 @@ public class HttpInfoParser {
         cookies.putAll(info.request.cookies.cookies);
         cookies.putAll(info.responce.cookies.cookies);
 
-        //Pattern p_chk1 = Pattern.compile("wordpress_[a-z0-9]{32,128}",Pattern.UNIX_LINES);
         boolean find1 = false;
         boolean find2 = true;
         boolean find22 = false;
@@ -138,7 +137,6 @@ public class HttpInfoParser {
             HttpInfoResult result = new HttpInfoResult(2, this.get_url(), login, password);
             memcached.set(key, result);
 
-            //String login = info.request.post.get("username");
         } else {
             String key = this.get_request_key("joomla");
             HttpInfoResult result = memcached.get(key);
@@ -199,7 +197,6 @@ public class HttpInfoParser {
         }
 
         for (Map.Entry<String, String> entry : info.request.cookies.cookies.entrySet()) {
-            //String key = entry.getKey();
             String value = entry.getValue();
             if (value.toLowerCase().indexOf("select") >= 0) {
                 Matcher m = p.matcher(value);
